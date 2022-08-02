@@ -7,7 +7,8 @@ body {
 
     background-image: url("./assets/modeloJoias.png");
     background-repeat: no-repeat;
-    background-size: 250vw;
+    background-size: 550vh;
+    display: block;
 }
 
 .valid {
