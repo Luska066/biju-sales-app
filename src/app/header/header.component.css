@@ -8,6 +8,10 @@
     height: 150px;
 }
 
+.container img{
+    width:270px;
+}
+
 .container-nav{
     display: flex;
     justify-content: flex-end;
