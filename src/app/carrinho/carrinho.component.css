@@ -1,0 +1,88 @@
+.cart-title {
+    font-size: 44px;
+    color: gray;
+    font-weight: bold;
+    padding: 8px 0;
+
+}
+
+li {
+    display: flex;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.remove-button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    transition: .2s all;
+}
+
+.remove-button:hover {
+    filter: brightness(0.9);
+}
+
+.cart-total {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    font-weight: 700;
+    margin-left: 20px;
+    padding: 8px 0;
+}
+
+input {
+    width: 30px;
+    text-align: center;
+}
+
+.buy-button {
+    background-color:rgb(36, 82, 167);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    transition: .3s all;
+}
+
+.buy-button:hover {
+    filter: brightness(0.9);
+}
+
+.ng{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 65vh;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+
+div{
+    margin: 20px;
+}
+
+.ng i{
+    font-size: 200px;
+}

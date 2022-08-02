@@ -1,0 +1,97 @@
+.container{
+    padding: 40px 0;
+    width: fit-content;    
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;  
+    justify-content: space-evenly;
+    align-content: center; 
+}
+
+.div-listner{
+    margin: 25px;
+    transition: all .6s;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 4px;
+    flex: 0 1 270px;
+    height: 450px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;     
+    border-radius: 10px;
+    transition: all .6s;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.div-listner:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.lister-link{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    row-gap: 10px; 
+    text-decoration: none;
+}
+
+.lister-link img {
+    height: 250px;
+    width: 250px;    
+    display: block;
+    border-radius: 4px;
+}
+
+.product-name{
+    font-family: Caviar Dreams;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.price{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+button{
+    background-color: rgb(42, 75, 119);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+.button:hover{
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+.descricaoProduto{
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pesquisa input{
+    width:600px;
+    border-radius: 15px 0px 0px 15px;
+    height: 40px;
+}
+
+.pesquisa .s{
+    border-radius: 0px 15px 15px 0px ;
+}

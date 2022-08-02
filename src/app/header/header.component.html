@@ -1,0 +1,13 @@
+<div class="container">
+    <img src="/assets/logo.png" width="300px">
+</div>
+<div class="container-nav">
+    <nav class="nav__container">
+        <ul class="nav-item__container">
+            <li class="item"><a routerLink="home" ><i class="fa-solid fa-house"></i></a></li>
+            <li class="item"><a routerLink="produtos"><i class="fa-solid fa-store"></i></a></li>
+            <li class="item"><a routerLink="carrinho"><i class="fa-solid fa-cart-shopping"></i><span class="badge-carrinho">{{carrinhoService.obtemCarrinho().length}}</span></a></li>
+            <li class="item"><a routerLink="contato"><i class="fa-solid fa-headset"></i></a></li>
+        </ul>
+    </nav>
+</div>

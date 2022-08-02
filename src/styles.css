@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+
+    background-image: url("./assets/modeloJoias.png");
+    background-repeat: no-repeat;
+    background-size: 380vh;
+}
+
+.valid {
+    border: 1px solid rgb(100, 167, 0);
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+.invalid:focus {
+	border-color: red;}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

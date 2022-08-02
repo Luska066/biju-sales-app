@@ -1,0 +1,87 @@
+<div class="container-body">
+    <section class="register-body">
+        <h2>Cadastre-se Aqui</h2>
+        <article class="params-register" [formGroup]="formCadastro">
+            <p>Login:</p>
+            <input 
+            type="text" 
+            name="name"
+            placeholder="Seu nome"
+            formControlName ="name" 
+            [class.valid]="formCadastro.controls['name'].valid" 
+            [class.invalid]="formCadastro.controls['name'].invalid && (formCadastro.controls['name'].touched || formCadastro.controls['name'].dirty)"
+             >
+             <div 
+             *ngIf="formCadastro.controls['name'].invalid && (formCadastro.controls['name'].touched || formCadastro.controls['name'].dirty)"
+             >
+              <small class="error-message" *ngIf="formCadastro.controls['name'].hasError('minLength')">
+                 *Esse campo precisa de no mínimo 10 Caracteres.
+              </small>
+              <small class="error-message" *ngIf="formCadastro.controls['name'].hasError('required')">
+                 *Esse campo precisa ser preenchido.
+              </small>
+             </div>
+        </article>
+
+
+        <article class="params-register" [formGroup]="formCadastro">
+            <p>E-mail:</p>
+            <input 
+            type="email" 
+            name="email"
+            placeholder="ex:email@email.com"
+            formControlName="email"
+            [class.valid]="formCadastro.controls['email'].valid" 
+            [class.invalid]="formCadastro.controls['email'].invalid && (formCadastro.controls['email'].touched || formCadastro.controls['email'].dirty)"
+            >
+            <div 
+            class="error"
+            *ngIf="formCadastro.controls['email'].invalid && (formCadastro.controls['email'].touched || formCadastro.controls['email'].dirty)"
+            >
+             <small class="error-message" *ngIf="formCadastro.controls['email'].hasError('email')">
+                *Insira um E-mail válido
+             </small>
+             <small class="error-message" *ngIf="formCadastro.controls['email'].hasError('required')">
+                *Esse campo precisa ser preenchido.
+             </small>
+            </div>
+        </article>
+
+        <article class="params-register" [formGroup]="formCadastro" >
+            <p>Telefone:</p>
+            <input 
+            type="tel" 
+            name="tel"
+            placeholder="(00) 0 0000-0000"
+            formControlName="tel"
+            mask="(00) 0 0000-0000"
+            formControlName="tel"
+            [class.valid]="formCadastro.controls['tel'].valid" 
+            [class.invalid]="formCadastro.controls['tel'].invalid && (formCadastro.controls['tel'].touched || formCadastro.controls['tel'].dirty)"
+            >
+
+            <div 
+            class="error"
+            *ngIf="formCadastro.controls['tel'].invalid && (formCadastro.controls['tel'].touched || formCadastro.controls['tel'].dirty)"
+            >
+             <small class="error-message" *ngIf="formCadastro.controls['tel'].hasError('minLength')">
+                *Insira um telefone válido
+             </small>
+             <small class="error-message" *ngIf="formCadastro.controls['tel'].hasError('required')">
+                *Esse campo precisa ser preenchido.
+             </small>
+            </div>  
+         </article>
+        
+        <div class="button">  
+            <button (click)="cadastrar()">Cadastrar</button>
+        </div>
+
+        <article class="params-register__alternative">
+            <ul>
+                <li><i class="fa-brands fa-google"></i>Acesse com o Google</li>
+                <li><i class="fa-brands fa-facebook"></i>Acesse com o Facebook</li>
+            </ul>
+        </article>
+    </section>
+</div>

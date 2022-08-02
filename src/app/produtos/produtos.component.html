@@ -1,0 +1,16 @@
+<div class="pesquisa" >
+    <input type="text" name="descricao" [(ngModel)]="descricao"> 
+    <button class="s" (click)="pesquisar()">Pesquisar</button>
+</div>
+
+<section class="container">
+    <div class="div-listner" *ngFor="let produto of produtos">
+        <a routerLink="/produtos/{{produto.id}}" class="lister-link">
+            <img [src]="produto.imagem" alt="">
+            <h2 class="product-name">{{produto.nomeProduto}}</h2>
+            <p class="price">{{produto.preco | currency:"BRL"}}</p>
+            <p class="descricaoProduto">{{produto.descricaoPreco}}</p>
+            <button class="button-buy">Comprar</button>
+        </a>
+    </div>
+</section>

@@ -1,0 +1,150 @@
+.container-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+h2{
+    font-family: Heavitas;
+    font-size: 30px;
+    transform: translateY(30px);
+}
+.register-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-body{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap:28px;
+    width:30vw;
+    height: 78vh;
+    border-radius:15px ;
+    box-shadow: 2px 0px 8px rgb(0, 0, 0);
+}
+
+.params-register{
+    font-family: Caviar Dreams;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+
+.params-register input{
+    width: 25vw;
+    height:4vh;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Caviar Dreams;
+    font-weight: bold;
+}
+
+input::-webkit-input-placeholder{
+    color:rgb(180, 180, 180);
+}
+.button{
+    transform: translateY(-10px);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 25vw;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Caviar Dreams;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgb(11, 99, 15);
+    box-shadow: 0px 0px 8px rgb(180, 180, 180);
+}
+
+button{
+    transition: all .6s;
+}
+
+button:hover{
+    background-color:rgb(16, 163, 28) ;
+    transform: scale(1.1,1.1);
+}
+
+button:placeholder{
+  opacity: .2;  
+}
+
+
+
+
+.params-register__alternative{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: 15vh;
+    transform: translateY(-20px);
+}
+
+.params-register__alternative ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.params-register__alternative ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    gap:60px;
+    background-color: rgb(11, 71, 95);
+    width: 20vw;
+    height: 30px;
+    padding: 5px;
+    border-radius:20px ;
+    font-family: Caviar Dreams;
+    font-weight: bold;
+    color: white;
+    transition: all .6s;
+}
+
+.params-register__alternative ul li:hover{
+    transform: scale(1.1,1.1);
+    background-color: rgb(15, 125, 168);
+}
+
+.error{
+    display: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.error-message{
+    display:relative;
+    color: red;
+    font-size: 10px;
+}
+
+ i{
+    color: white;
+    font-size: 23px;
+}
+

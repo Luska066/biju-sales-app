@@ -1,0 +1,45 @@
+.container{
+    background-image:linear-gradient(rgb(116, 74, 11),rgb(211, 133, 15));
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer-container{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    width: 600px;
+}
+
+.footer-informacoes h2{
+    font-size: 26px ;
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+.footer-informacoes p{
+    font-size: 15px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+iframe{
+    margin-left: 100px;
+}
+
+.p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
