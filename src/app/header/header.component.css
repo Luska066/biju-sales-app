@@ -1,6 +1,5 @@
 .container{
     display: flex;
-    flex: 1;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -9,7 +8,8 @@
 }
 
 .container img{
-    width:270px;
+    width: 300px;
+    height: 300px;
 }
 
 .container-nav{
